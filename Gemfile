@@ -1,13 +1,13 @@
 source 'https://rubygems.org'
 ruby '3.3.0'
 
-gem 'rails', '7.1.3.4'
-gem 'bootstrap', '4.6.2'
+gem 'rails', '7.1.4'
+gem 'bootstrap', '4.6.2.1'
 gem 'attr_encrypted', git: 'https://github.com/octobox/attr_encrypted.git', branch: 'rails-7'
 gem 'jquery-rails'
 gem 'pagy'
 gem 'local_time', '2.1.0'
-gem 'octicons_helper'
+gem 'octicons_helper', '>= 19.12.0'
 gem 'octokit'
 gem 'omniauth-github', '2.0.1'
 gem 'puma'
@@ -18,12 +18,12 @@ gem 'faraday_middleware'
 gem 'faraday'
 gem 'uglifier'
 gem 'pg_search'
-gem 'jbuilder'
+gem 'jbuilder', '>= 2.13.0'
 gem 'rake', require: false
 gem 'rgb'
-gem 'sidekiq'
-gem 'sidekiq-unique-jobs'
-gem 'sidekiq-scheduler', require: false
+gem 'sidekiq', '>= 7.3.1'
+gem 'sidekiq-unique-jobs', '>= 8.0.11'
+gem 'sidekiq-scheduler', '>= 6.0.0', require: false
 gem 'rack-canonical-host'
 gem 'sidekiq-status'
 gem 'gemoji', '<4', require: false
@@ -41,7 +41,7 @@ gem 'nokogiri'
 gem 'redis'
 
 group :development, :test do
-  gem 'dotenv-rails'
+  gem 'dotenv-rails', '>= 3.1.3'
   gem 'rails-controller-testing'
   gem 'sql_queries_count'
   gem 'active_record_query_trace'
@@ -49,7 +49,7 @@ end
 
 group :test do
   gem 'factory_bot'
-  gem 'webmock'
+  gem 'webmock', '>= 3.24.0'
   gem 'mocha'
   gem 'minitest'
   gem 'timecop'
